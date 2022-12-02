@@ -1,13 +1,10 @@
 
-
-# DRAFT IM NOT DONE!
-
 with open('input.txt') as file:
     data = [i for i in file.read().strip().split("\n")]
 
 max = 0
-max2 = 0    # second greatest calories
-max3 = 0    # third greatest
+max2 = 0    
+max3 = 0   
 count = 0
 for item in data:
     if item == '':
@@ -18,8 +15,8 @@ for item in data:
 
     # Finding max values
     if count > max: 
-        max = count     # most calories
+        max = count     
     elif count > max2:
-        max2 = count    # second 
+        max2 = count   
     elif count > max3:
-        max3 = count    # third 
+        max3 = count   
