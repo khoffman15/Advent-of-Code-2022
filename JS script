@@ -9,3 +9,20 @@ const elfCalories = input
   })
   .sort((a, b) => b-a);
 puzzleSolution1.setValue(elfCalories[0]);
+
+const input = puzzleInput.value;
+
+const elfCalories = input
+  .split('\n\n')
+  .map(elf => {
+    return elf
+      .split('\n')
+      .reduce((total, current) => total + Number(current.trim()), 0);
+  })
+  .sort((a, b) => b-a);
+
+puzzleSolution2.setValue(
+  // The solution is the sum of the first three values in the
+  // sorted array!
+  elfCalories[0] + elfCalories[1] + elfCalories[2]
+);
