@@ -2,6 +2,8 @@
 
 # DRAFT IM NOT DONE!
 
+with open('input.txt') as file:
+    data = [i for i in file.read().strip().split("\n")]
 
 max = 0
 max2 = 0    # second greatest calories
